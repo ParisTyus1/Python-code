@@ -63,15 +63,15 @@
 #         output += "x"
 #     print(output)
 #
-# names = ['john', 'bosh', 'sarah', 'kim']
-# names.append('paris')
-# print(names)
-#
-# max = numbers[0]
-# for number in numbers:
-#     if number > max:
-#         max = number
-# print(max)
+names = ['john', 'bosh', 'sarah', 'kim']
+names.append('paris')
+print(names)
+
+max = numbers[0]
+for number in numbers:
+    if number > max:
+        max = number
+print(max)
 
 # two dimensional list
 import row
@@ -82,7 +82,7 @@ matrix = [
     [7,8,9]
 
 ]
-
+# loop within a loop #
 for item in matrix:
     for item in row:
             print(item)

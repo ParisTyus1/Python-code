@@ -18,7 +18,7 @@
 #
 # if has_good_credit and not has_criminal_record:
 #     print("eligible for loan")
-
+#
 # if has_good_credit:
 #     down_payment = 0.1 * price
 # elif has_bad_credit:
