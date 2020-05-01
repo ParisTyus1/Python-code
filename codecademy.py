@@ -1,16 +1,22 @@
 # sale exercise #
 
-lovely_loveseat_description = """Lovely Loveseat. Tufted polyester blend on wood. 
-32 inches high X 40 inches wide x 30 inches deep. Red or White"""
+lovely_loveseat_description = """
+Lovely Loveseat. Tufted polyester blend on wood. 
+32 inches high X 40 inches wide x 30 inches deep. Red or White
+"""
 
 lovely_loveseat_price = 254.00
 
-stylish_settee_description = """Stylish Settee. Faux leather on birch. 
-29.50 inches high x 54.75 inches wide x 28 inches deep. Black"""
+stylish_settee_description = """
+Stylish Settee. Faux leather on birch. 
+29.50 inches high x 54.75 inches wide x 28 inches deep. Black
+"""
 
 stylish_settee_price = 108.50
 
-luxurious_lamp_description = """Luxurious Lamp. Glass and iron. 36 inches tall. Brown with cream shade."""
+luxurious_lamp_description = """ 
+Luxurious Lamp. Glass and iron. 36 inches tall. Brown with cream shade.
+"""
 
 luxurious_lamp_price = 52.15
 
@@ -91,3 +97,34 @@ c0_in_fahrenhiet = c_to_f
 c_temp = 0
 
 print(c_to_f(0, 100))
+
+
+# ----------------------------------#
+# Write a function called greater_than that takes two integer inputs,
+# x and y and returns the value that is greater.
+# If x and y are equal, return the string
+
+# Codecademy conditionals #
+def greater_than(x, y):
+    if x > y:
+        return x
+    if y > x:
+        return y
+    if x == y:
+        return "These numbers are the same"
+
+
+# The nearby college, Calvin Coolidge’s Cool College (or 4C, as the locals call it)
+# requires students to earn 120 credits to graduate.
+# Write a function called graduation_reqs
+# that takes an input credits and checks if the
+# student has enough credits to graduate. If they do, return the string
+
+def graduation_reqs(credits):
+    if credits >= 120:
+        return "You have enough credits to graduate!"
+
+
+# Call graduation_reqs with an input of 120 credits and print the result to the terminal.
+# Can a student with 120 credits graduate from Calvin Coolidge’s Cool College?
+print(graduation_reqs(120))
