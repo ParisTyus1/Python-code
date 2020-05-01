@@ -128,3 +128,18 @@ def graduation_reqs(credits):
 # Call graduation_reqs with an input of 120 credits and print the result to the terminal.
 # Can a student with 120 credits graduate from Calvin Coolidge’s Cool College?
 print(graduation_reqs(120))
+
+# boolean expressions #
+statement_one = (2 + 2 + 2 >= 6) and (-1 * -1 < 0)
+
+statement_two = (4 * 2 <= 8) and (7 - 1 == 6)
+
+
+# Let’s return to Calvin Coolidge’s Cool College.
+# 120 credits aren’t the only graduation requirement,
+# you also need to have a GPA of 2.0 or higher.
+# Rewrite the graduation_reqs function so it takes two inputs,
+# gpa and credits, and checks to see if a student meets both requirements using an and statement.
+def graduation_reqs(gpa, credits):
+    if credits >= 120 and gpa >= 2.0:
+        return "You meet the requirements to graduate!"
