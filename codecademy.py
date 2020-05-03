@@ -144,6 +144,7 @@ def graduation_reqs(gpa, credits):
     if credits >= 120 and gpa >= 2.0:
         return "You meet the requirements to graduate!"
 
+
 # The registrars office at Calvin Coolidge’s Cool College has another request.
 # They want to send out a mailer with information on the commencement
 # ceremonies to students who have met at least one requirement for
@@ -156,9 +157,11 @@ statement_one = (2 - 1 > 3) or (-5 * 2 == -10)
 
 statement_two = (9 + 5 <= 15) or (7 != 4 + 3)
 
-def graduation_mailer(gpa,credits):
+
+def graduation_mailer(gpa, credits):
     if credits >= 120 or gpa >= 2.0:
         return True
+
 
 # The registrar’s office at Calvin Coolidge’s Cool College has been so
 # impressed with your work so far that they have another task for you.
@@ -180,6 +183,7 @@ statement_one = False
 
 statement_two = True
 
+
 def graduation_reqs(gpa, credits):
     if (gpa >= 2.0) and (credits >= 120):
         return "You meet the requirements to graduate!"
@@ -189,6 +193,7 @@ def graduation_reqs(gpa, credits):
         return "Your GPA is not high enough to graduate."
     if not (gpa >= 2.0) and not (credits >= 120):
         return "You do not meet either requirement to graduate!"
+
 
 # if else statments #
 # Calvin Coolidge’s Cool College has another request for you.
@@ -207,3 +212,84 @@ def graduation_reqs(gpa, credits):
         return "Your GPA is not high enough to graduate."
     else:
         return "You do not meet the GPA or the credit requirement for graduation."
+
+
+# Calvin Coolidge’s Cool College has noticed that students prefer
+# to get letter grades over GPA numbers.
+# They want you to write a function called grade_converter that
+# converts an inputted GPA into the appropriate letter grade.
+# Your function should be named grade_converter, take the input gpa, and convert the following GPAs:
+
+# 4.0 or higher should return "A"
+# 3.0 or higher should return "B"
+# 2.0 or higher should return "C"
+# 1.0 or higher should return "D"
+# 0.0 or higher should return "F"
+# You can do this by creating a variable called grade.
+#
+# Then, you should use elif statements to set grade to the appropriate
+# letter grade for the gpa entered.
+#
+# At the end of the function, return grade.
+
+def grade_converter(gpa):
+    if gpa >= 4.0:
+        return "A"
+    elif gpa >= 3.0:
+        return "B"
+    elif gpa >= 2.0:
+        return "C"
+    elif gpa >= 1.0:
+        return "D"
+    else:
+        return "F"
+
+
+# Great! Nice error raising!
+# Now let’s make that error message a little more palatable.
+
+# Write a try statement and an except statement around the line of code
+# that executes the function to catch a ValueError and make the error
+# message print You raised a ValueError!
+
+def raises_value_error():
+    raise ValueError
+
+
+try:
+    raises_value_error()
+except ValueError:
+    print("You raised a ValueError!")
+
+# 1.The admissions office at Calvin Coolidge’s Cool College has heard
+# about your programming prowess and wants to get a piece of it for themselves.
+# They’ve been inundated with applications and need a way to automate the filtering process.
+# They collect three pieces of information for each applicant:
+
+# Their high school GPA, on a 0.0 - 4.0 scale.
+# Their personal statement, which is given a score on a 1 - 100 scale.
+# The number of extracurricular activities they participate in.
+# The admissions office has a cutoff point for each category.
+# They want students that have a GPA of 3.0 or higher,
+# a personal statement with a score of 90 or higher,
+# and who participated in 3 or more extracurricular activities.
+
+# Write a function called applicant_selector which takes three inputs,
+# gpa, ps_score, and ec_count. If the applicant meets the cutoff
+# point for all three categories, have the function return the string:
+
+# 2. Great! The admissions office also wants to give students who have
+# a high GPA and a strong personal statement a chance even if they don’t
+# participate in enough extracurricular activities.
+#
+# If an applicant meets the cutoff point for GPA and
+# personal statement score, but not the extracurricular activity count,
+# the function should return the string:
+
+def applicant_selector(gpa, ps_score, ec_count):
+    if gpa >= 3.0 and ps_score >= 90 and ec_count >= 3:
+        return "This applicant should be accepted."
+    elif gpa >= 3.0 and ps_score >= 90 and ec_count < 3:
+        return "This applicant should be given an in-person interview."
+    else:
+        return "This applicant should be rejected."
