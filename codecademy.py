@@ -261,7 +261,7 @@ try:
 except ValueError:
     print("You raised a ValueError!")
 
-# 1.The admissions office at Calvin Coolidge’s Cool College has heard
+#1. The admissions office at Calvin Coolidge’s Cool College has heard
 # about your programming prowess and wants to get a piece of it for themselves.
 # They’ve been inundated with applications and need a way to automate the filtering process.
 # They collect three pieces of information for each applicant:
@@ -278,13 +278,15 @@ except ValueError:
 # gpa, ps_score, and ec_count. If the applicant meets the cutoff
 # point for all three categories, have the function return the string:
 
-# 2. Great! The admissions office also wants to give students who have
+#2. Great! The admissions office also wants to give students who have
 # a high GPA and a strong personal statement a chance even if they don’t
 # participate in enough extracurricular activities.
 #
 # If an applicant meets the cutoff point for GPA and
 # personal statement score, but not the extracurricular activity count,
 # the function should return the string:
+
+#3.  Finally, for all other cases, the function should return the string:
 
 def applicant_selector(gpa, ps_score, ec_count):
     if gpa >= 3.0 and ps_score >= 90 and ec_count >= 3:
