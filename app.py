@@ -40,29 +40,29 @@
 # msg = f'{first} {last} is a coder'
 # print(msg)
 #
-# course = 'python for beginners'
-# print(len(course))
-# print(course.upper())
-# print(course.title())
-# print(course.lower())
-# print(course.find('p'))
-# print(course.replace('beginners', 'Advanced'))
-# print('python' in course)
-#
-# print(10 / 3)
-# print(10 // 3)
-# print(10 % 3)
-# print(10 * 3)
-# print(10 ** 3)
-# print(10 + 3)
-#
-# x = 10
-# x -= 3
-# print(x)
+course = 'python for beginners'
+print(len(course))
+print(course.upper())
+print(course.title())
+print(course.lower())
+print(course.find('p'))
+print(course.replace('beginners', 'Advanced'))
+print('python' in course)
 
-# x = 2.9
-# print(round(x))
-# print(abs(x))
+print(10 / 3)
+print(10 // 3)
+print(10 % 3)
+print(10 * 3)
+print(10 ** 3)
+print(10 + 3)
+
+x = 10
+x -= 3
+print(x)
+
+x = 2.9
+print(round(x))
+print(abs(x))
 
 
 # key, value pairing#
