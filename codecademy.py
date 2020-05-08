@@ -295,3 +295,79 @@ def applicant_selector(gpa, ps_score, ec_count):
         return "This applicant should be given an in-person interview."
     else:
         return "This applicant should be rejected."
+
+# Sal's shipping program
+# First off, we need to know how much it costs to ship a
+# package of given weight by normal ground shipping.
+
+# Write a function for the cost of ground shipping.
+# This function should take one parameter, weight,
+# and return the cost of shipping a package of that weight.
+
+def ground_shipping_cost(weight):
+    flat_rate = 20.00
+    cost = weight
+    if weight <= 2.00:
+        return cost * 1.5 + flat_rate
+    elif weight >= 2.00 and weight <= 6.00:
+        return cost * 3.00 + flat_rate
+    elif weight >= 6.00 and weight <= 10.00:
+        return cost * 4.00 + flat_rate
+    else:
+        return cost + 4.75 + flat_rate
+
+print(ground_shipping_cost(8.4))
+
+# We’ll also need to make sure we include the price of premium ground shipping in our code.
+# Create a variable for the cost of premium ground shipping.
+# Note: this does not need to be a function because
+# the price of premium ground shipping does not change with the weight of the package.
+
+premium_ground_shipping = 125.00
+
+
+# Write a function for the cost of drone shipping.
+# This function should take one parameter, weight,
+# and return the cost of shipping a package of that weight.
+def drone_shipping(weight):
+    flat_rate = 0.00
+    cost = weight
+    if weight <= 2.00:
+        return cost * 4.5 + flat_rate
+    elif weight >= 2.00 and weight <= 6.00:
+        return cost * 9.00 + flat_rate
+    elif weight >= 6.00 and weight <= 10.00:
+        return cost * 12.00 + flat_rate
+    else:
+        return cost + 14.25 + flat_rate
+
+print(drone_shipping(1.5))
+
+# Using those two functions for ground shipping
+# cost and drone shipping cost, as well as the cost
+# of premium ground shipping, write a function that
+# takes one parameter, weight and prints a statement that tells the user
+
+# The shipping method that is cheapest.
+# How much it would cost to ship a package of said weight using this method.
+
+# Great job! Now, test your function!
+
+# What is the cheapest method of shipping a 4.8 pound package and how much would it cost?
+
+# What is the cheapest method of shipping a 41.5 pound package and how much would it cost?
+
+def best_price(weight):
+    return weight
+
+print(""" The cheapest shipping method for a 4.8 pound package 
+is using ground shipping and it will cost """ )
+
+print(ground_shipping_cost(4.8))
+
+print("""The cheapest shipping method for a 4.8 pound package 
+is using premium ground shipping and it will cost """ )
+
+print(premium_ground_shipping)
+
+
