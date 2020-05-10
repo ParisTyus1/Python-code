@@ -379,3 +379,19 @@ names_and_dogs_names = zip(names, dogs_names)
 list_of_names_and_dogs_names = list(names_and_dogs_names)
 
 print(list(list_of_names_and_dogs_names))
+
+orders = ['daisy', 'buttercup', 'snapdragon', 'gardenia', 'lily']
+
+# Create new orders here:
+# //concatenating lists//
+new_orders = orders + ['lilac', 'iris']
+
+broken_prices = [5, 3, 4, 5, 4] + [4]
+
+# 1. Modify list1 so that it is a range containing
+# numbers starting at 0 and up to, but not including, 9.
+
+# 2.Create a range called list2 with the numbers 0 through 7.
+
+list1 = range(9)
+list2 = range(8)
