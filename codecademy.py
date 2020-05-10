@@ -403,3 +403,11 @@ list2 = range(8)
 # Ends before 15
 
 list3 = range(5, 15, 3)
+
+# Create a range object called list2 that:
+
+# Starts at 0
+# Has a difference of 5 between each item
+# Ends before 40
+
+list5 = range(0,40,5)
