@@ -395,3 +395,11 @@ broken_prices = [5, 3, 4, 5, 4] + [4]
 
 list1 = range(9)
 list2 = range(8)
+
+# Modify the range function that created list1 such that it:
+
+# Starts at 5
+# Has a difference of 3 between each item
+# Ends before 15
+
+list3 = range(5, 15, 3)
