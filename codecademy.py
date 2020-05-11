@@ -479,3 +479,69 @@ print(gradebook)
 # both gradebook and last_semester_gradebook.
 full_gradebook = gradebook + last_semester_gradebook
 print(full_gradebook)
+
+
+# ////////////////////////more list stuff////////////////
+list1 = range(2, 20, 3)
+
+# Calculate the length of list1 and save it to the variable list1_len.
+list1_len = len(list1)
+print(list1_len)
+
+# Change the range command that generates list1 so that it skips 3 instead of 2 between items.
+# How does this change list1_len? changes to 6
+
+employees = ['Michael', 'Dwight', 'Jim', 'Pam', 'Ryan', 'Andy', 'Robert']
+
+
+# Use square brackets ([ and ]) to select the element
+# with index 4 from the list employees. Save it to the variable index4.
+# Use print and len to display how many items are in employees.
+index4 = employees[4]
+print(len(employees))
+
+employees = ['Michael', 'Dwight', 'Jim', 'Pam', 'Ryan', 'Andy', 'Robert']
+
+
+# Use square brackets ([ and ]) to select the element with index 4 from the list employees. Save it to the variable index4.
+# Use print and len to display how many items are in employees.
+
+# Paste the following code into script.py:
+# print(employees[8])
+# What happens? Why?
+# Selecting an element that does not exist produces an IndexError.
+# In the line of code that you pasted, change 8 to a different number so that you don’t get an IndexError.
+
+index4 = employees[4]
+print(len(employees))
+
+print(employees[6])
+
+shopping_list = ['eggs', 'butter', 'milk', 'cucumbers', 'juice', 'cereal']
+# Use print and len to display the length of shopping_list.
+# 2. Get the last element of shopping_list using the -1 index. Save this element to the variable last_element.
+
+# 3. Now select the element with index 5 and save it to the variable element5.
+# 4. Use print to display both element5 and last_element.
+print(len(shopping_list))
+last_element = shopping_list[-1]
+element5 = shopping_list[5]
+print(element5)
+
+suitcase = ['shirt', 'shirt', 'pants', 'pants', 'pajamas', 'books']
+
+beginning = suitcase[0:4]
+print(beginning)
+# 1.
+# Use print to examine the variable beginning.
+
+# How many elements does it contain?
+
+# 2.
+# Modify beginning, so that it selects the first 4 elements of suitcase.
+
+# 3.
+# Create a new list called middle that contains the middle two items from suitcase.
+middle = suitcase[2:4]
+
+
