@@ -542,6 +542,24 @@ print(beginning)
 
 # 3.
 # Create a new list called middle that contains the middle two items from suitcase.
-middle = suitcase[2:4]
+# middle = suitcase[2:4]
 
+# Create a new list called start containing the first 3 elements of suitcase.
+# 2. Create a new list called end containing the final two elements of suitcase.
+suitcase = ['shirt', 'shirt', 'pants', 'pants', 'pajamas', 'books']
+start = suitcase[0:3]
+end = suitcase[4:]
+print(start, end)
 
+# Mrs. WIlson’s class is voting for class president. She has saved each student’s vote into the list votes.
+# Use count to determine how many students voted for 'Jake'. Save your answer as jake_votes.
+# Stuck? Get a hint
+# 2. Use print to examine jake_votes.
+
+votes = ['Jake', 'Jake', 'Laurie', 'Laurie', 'Laurie', 'Jake', 'Jake',
+         'Jake', 'Laurie', 'Cassie', 'Cassie', 'Jake', 'Jake', 'Cassie',
+         'Laurie', 'Cassie', 'Jake', 'Jake', 'Cassie', 'Laurie']
+
+jake_votes = votes.count('Jake')
+
+print(jake_votes)
