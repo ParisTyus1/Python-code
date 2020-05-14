@@ -592,10 +592,67 @@ print(games_sorted)
 
 inventory = ['twin bed', 'twin bed', 'headboard', 'queen bed', 'king bed', 'dresser', 'dresser', 'table', 'table', 'nightstand', 'nightstand', 'king bed', 'king bed', 'twin bed', 'twin bed', 'sheets', 'sheets', 'pillow', 'pillow']
 
-inventory_len= len(inventory)
+inventory_len = len(inventory)
 first = inventory[0]
 last = inventory[-1]
 inventory_2_6 = inventory[2:6]
 first_3 = inventory[0:3]
 twin_beds = inventory.count('twin bed')
 inventory.sort()
+
+
+
+
+# ///////////////////////// Lenny's Pizza //////////////////////////
+# You work at Len’s Slice, a new pizza joint in the neighborhood.
+# You are going to use your knowledge of Python lists to organize some of your sales data.
+
+# If you get stuck during this project or would like to see an experienced developer work through it,
+# click “Get Help“ to see a project walkthrough video.
+
+# To keep track of the kinds of pizzas you sell, create a list called toppings that holds the following:
+
+# pepperoni
+# pineapple
+# cheese
+# sausage
+# olives
+# anchovies
+# mushrooms
+
+toppings = ['pepperoni', 'pineapple','cheese','sausage','olives','anchovies','mushroom']
+# To keep track of how much each kind of pizza slice costs, create a list called prices that holds:
+#
+# 2
+# 6
+# 1
+# 3
+# 2
+# 7
+# 2
+prices = [2,6,1,3,2,7,2]
+
+# Find the length of the toppings list and store it in a variable called num_pizzas.
+num_pizzas = len(toppings)
+
+# Print the string "We sell X different kinds of pizza!", with num_pizzas where the X is.
+print("We sell " + str(num_pizzas) + " kinds of pizza!")
+
+pizzas = list(zip(prices, toppings))
+print(pizzas)
+
+# Use zip to combine the two lists into a list called pizzas that has the structure:
+#
+# [(price_0, topping_0), (price_1, topping_1), (price_2, topping_2), ...]
+# In order to make the result of zip a list, do the following:
+
+# list(zip(____, ____))
+pizzas.sort()
+
+cheapest_pizza = pizzas[0]
+priciest_pizza = pizzas[-1]
+three_cheapest = pizzas[:3]
+print(three_cheapest)
+num_two_dollar_slices = prices.count(2)
+print(num_two_dollar_slices)
+print(cheapest_pizza)
