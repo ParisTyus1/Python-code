@@ -656,3 +656,11 @@ print(three_cheapest)
 num_two_dollar_slices = prices.count(2)
 print(num_two_dollar_slices)
 print(cheapest_pizza)
+# ////////////////////////tuples//////////////////////
+students_period_A = ["Alex", "Briana", "Cheri", "Daniele"]
+students_period_B = ["Dora", "Minerva", "Alexa", "Obie"]
+
+for student in students_period_A:
+    #students_period_A.append(student)
+    students_period_B.append(student)
+    print(student)
