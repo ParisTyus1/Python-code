@@ -707,5 +707,22 @@ print(scoops_sold)
 
 heights = [161, 164, 156, 144, 158, 170, 163, 163, 157]
 can_ride_coaster = [height for height in heights if height > 161]
+# //////////convert temps using list comparisons/////////////
+celsius = [0, 10, 15, 32, -5, 27, 3]
+
+fahrenheit = [temp*(9/5) + 32 for temp in celsius]
+
+print(fahrenheit)
+
+# ////Loops review//////
+single_digits = range(10)
+squares = []
+
+for item in single_digits:
+    print(item)
+    squares.append(item**2)
+
+cubes = [item**3 for item in single_digits]
+print(cubes)
 
 print(can_ride_coaster)
