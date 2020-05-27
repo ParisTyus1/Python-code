@@ -664,3 +664,19 @@ for student in students_period_A:
     #students_period_A.append(student)
     students_period_B.append(student)
     print(student)
+
+dog_breeds_available_for_adoption = ['french_bulldog', 'dalmatian', 'shihtzu', 'poodle', 'collie']
+dog_breed_I_want = 'dalmatian'
+
+for breed in dog_breeds_available_for_adoption:
+    print(breed)
+    if breed == dog_breed_I_want:
+        print("They have the dog I want!")
+        break
+# ///////////// Loops in python////////////
+ages = [12, 38, 34, 26, 21, 19, 67, 41, 17]
+
+for i in ages:
+    if i < 21:
+        continue
+    print(i)
