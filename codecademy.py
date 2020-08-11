@@ -757,3 +757,32 @@ print(average_daily_revenue)
 
 cuts_under_30 = [hairstyles[i] for i in range(len(hairstyles)) if new_prices[i] < 30]
 print(cuts_under_30)
+
+# Reviewing python fundamentals
+#Write your function here
+def delete_starting_evens(lst):
+    while (len(lst) > 0 and lst[0] % 2 == 0):
+        lst = lst[1:]
+    return lst
+
+#Uncomment the lines below when your function is done
+print(delete_starting_evens([4, 8, 10, 11, 12, 15]))
+print(delete_starting_evens([4, 8, 10]))
+
+# line 3 uses while loop to determine first is an element and then if the element are odd, slice the first element off.
+
+# Return all odds is the task
+# 1. define the function with (lst) as the parameter
+# 2. create a new empty list
+# 3. create a for loop that finds all odd indices
+# 4.append indices to new list
+
+#Write your function here
+def odd_indices(lst):
+    new_list = []
+    for index in range(1, len(lst), 2):
+        new_list.append(lst[index])
+    return new_list
+
+print(odd_indices([4, 3, 7, 10, 11, -2]))
+
